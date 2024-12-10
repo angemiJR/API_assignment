@@ -1,4 +1,5 @@
 import {Link} from 'react-router-dom';
+import "../styles/Navbar.css";
 
 
 
@@ -17,7 +18,7 @@ return (
       </ul>
     </div>
     <div>
-        <h2>Sign in</h2>
+        <h2><Link to="/signIn">Sign in</Link></h2>
     </div>
   </nav>
 
