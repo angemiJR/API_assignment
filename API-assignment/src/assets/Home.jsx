@@ -14,13 +14,21 @@ function Home() {
 
   return (
     <>
-      <div>
+      <div className="search">
+
+        <div className="input">
         <input
           type="text"
           placeholder="Enter your house"
           value={search}
-          onChange={(e) => setSearch(e.target.value)}
-        />
+          onChange={(e) => setSearch(e.target.value)} 
+          >
+         
+        
+         
+          </input>
+           <button>Search</button>
+          </div>
 
         {data.filter((item) => {
           return search.toLowerCase() === "" 
